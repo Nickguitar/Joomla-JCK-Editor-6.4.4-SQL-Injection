@@ -26,3 +26,7 @@ user@lol:~$ php JCKEditor_SQLi_Exploit.php --url target.com/plugins/
 You **must** specify the /plugins/ directory. This is because some websites are not hosted on the root of the webserver, e.g, the applications may be as target.com/site/, or target.com/2021/, or something like that.
 
 With -r or --rce, the exploit will try to craft and upload a PHP script that allows remote command execution. This will only work if the MySQL allows stacked queries, which is not the default configuration, so it will probably not work. =(
+
+With -t or --targets you can specify a list of vulnerable websites, and the exploit will dump all in sequence.
+
+Sometimes the website administrator can change the default name of the database. In this case, you can get the list of all DBs and specify the correct one with -d or --db.
