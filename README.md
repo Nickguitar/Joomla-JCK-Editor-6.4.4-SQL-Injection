@@ -30,3 +30,5 @@ With -r or --rce, the exploit will try to craft and upload a PHP script that all
 With -t or --targets you can specify a list of vulnerable websites, and the exploit will dump all in sequence.
 
 Sometimes the website administrator can change the default name of the database. In this case, you can get the list of all DBs and specify the correct one with -d or --db.
+
+![](https://i.imgur.com/NOrGm2c.png)
